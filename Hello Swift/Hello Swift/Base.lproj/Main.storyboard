@@ -35,11 +35,27 @@
                                     <action selector="btnShowAlertPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1XX-MU-Rwx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqm-NH-oFz">
+                                <rect key="frame" x="36" y="80" width="303" height="30"/>
+                                <color key="backgroundColor" red="0.45805352849999997" green="0.46480807010000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uBL-zg-JKQ"/>
+                                </constraints>
+                                <state key="normal" title="Show Me ActionSheet">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnShowActionSheetPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V4U-Zr-VCN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Yqm-NH-oFz" firstAttribute="top" secondItem="cFJ-cD-Kma" secondAttribute="bottom" constant="10" id="0PQ-s4-ILv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cFJ-cD-Kma" secondAttribute="trailing" constant="20" id="Mdt-Gs-flQ"/>
+                            <constraint firstItem="Yqm-NH-oFz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="nET-cf-kpn"/>
                             <constraint firstItem="cFJ-cD-Kma" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="q7z-SX-TjL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yqm-NH-oFz" secondAttribute="trailing" constant="20" id="uew-vk-EF5"/>
                             <constraint firstItem="cFJ-cD-Kma" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="yT1-Rz-mm4"/>
                         </constraints>
                     </view>

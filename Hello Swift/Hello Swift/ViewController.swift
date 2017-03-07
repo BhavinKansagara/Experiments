@@ -30,6 +30,28 @@ class ViewController: UIViewController {
         alertController.addAction(action)
         alertController.show(self, sender: self)
     }
+    
+    @IBAction func btnShowActionSheetPressed(sender: UIButton){
+        
+        let title = "Hello Swift"
+        let message = "This is just the welcome message for you. Explore more on swift"
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+        
+        let actionTitle = "OK"
+        let actionDefault = UIAlertAction(title: actionTitle, style: .default) { (k) in
+            print("ok presed")
+        }
+        
+        let destructiveTitle = "Destructive"
+        let actionDestructive = UIAlertAction(title: destructiveTitle, style: .destructive) { (k) in
+            print("Destructive presed")
+        }
+        
+        alertController.addAction(actionDefault)
+        alertController.addAction(actionDestructive)
+
+        alertController.show(self, sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
